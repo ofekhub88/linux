@@ -7,9 +7,9 @@
 
     
     curlf() {
-      OUTPUT_FILE="/tmp/jmelody_out.tmp"
-      LOG_FILE="/tmp/jmelody_out.log"
-      HTTP_CODE=$(curl --silent --output $OUTPUT_FILE --write-out "%{http_code}" "$@")
+      OUTPUT_FILE="/tmp/<FileName>.tmp"
+      LOG_FILE="/tmp/<FileName>.log"
+      HTTP_CODE=$(curl  --max-time 5  --silent --output $OUTPUT_FILE --write-out "%{http_code}" "$@")
       if [[ ${HTTP_CODE} -lt 200 || ${HTTP_CODE} -gt 299 ]] ; then
         cat $OUTPUT_FILE >> $LOG_FILE
         exit 22
