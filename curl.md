@@ -3,7 +3,7 @@
 
 
  <p> Config example:
- [Service]
+   [Service]
     curlf() {
       OUTPUT_FILE="/tmp/jmelody_out.tmp"
       LOG_FILE="/tmp/jmelody_out.log"
