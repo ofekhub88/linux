@@ -6,7 +6,7 @@
 
 
     
-        curlf() {
+    curlf() {
       OUTPUT_FILE="/tmp/jmelody_out.tmp"
       LOG_FILE="/tmp/jmelody_out.log"
       HTTP_CODE=$(curl --silent --output $OUTPUT_FILE --write-out "%{http_code}" "$@")
