@@ -1,6 +1,6 @@
 curl check status
 =====================
-<p> The Code is :
+ <p> Config example:
 curlf() {
   OUTPUT_FILE="/tmp/jmelody_out.tmp"
   LOG_FILE="/tmp/jmelody_out.log"
@@ -11,12 +11,5 @@ curlf() {
   fi
   cat $OUTPUT_FILE|2>&1| /usr/bin/tr -d '\n'|awk '{$2=$2};1
 }
-</p>
- <p> Config example:
-    
-    [Service]
-    Environment="HTTP_PROXY=http://proxy.example.com:80"
-    Environment="HTTPS_PROXY=https://proxy.example.com:443"
-    Environment="NO_PROXY=localhost,127.0.0.1,docker-registry.example.com,.corp"
- 
- # insecure-registries  work wihth http 
+
+
