@@ -1,6 +1,8 @@
 curl check status
 =====================
- <p> Config example:
+
+<p> Config example:
+ 
 curlf() {
   OUTPUT_FILE="/tmp/jmelody_out.tmp"
   LOG_FILE="/tmp/jmelody_out.log"
