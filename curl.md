@@ -10,3 +10,4 @@ curlf() {
   fi
   cat $OUTPUT_FILE|2>&1| /usr/bin/tr -d '\n'|awk '{$2=$2};1
 }
+</p>
