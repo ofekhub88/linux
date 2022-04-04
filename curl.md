@@ -18,9 +18,7 @@
 
     
     [Service]
-    Environment="HTTP_PROXY=http://proxy.example.com:80"
-    Environment="HTTPS_PROXY=https://proxy.example.com:443"
-    Environment="NO_PROXY=localhost,127.0.0.1,docker-registry.example.com,.corp"
+
         curlf() {
       OUTPUT_FILE="/tmp/jmelody_out.tmp"
       LOG_FILE="/tmp/jmelody_out.log"
